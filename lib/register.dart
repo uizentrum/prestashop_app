@@ -1,11 +1,12 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:prestashop_app/login.dart';
+import 'file:///D:/AndroidProjects/prestashop_app/lib/login.dart';
 
 class Register extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomPadding: false,
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(20.0),

@@ -1,0 +1,5 @@
+flutter_native_splash:
+  image: images/genericlogo2.png
+  color: “6a1b9a”
+  android: true
+  fill: true

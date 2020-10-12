@@ -1,11 +1,14 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:prestashop_app/register.dart';
+import 'file:///D:/AndroidProjects/prestashop_app/lib/home_screen_1.dart';
+import 'file:///D:/AndroidProjects/prestashop_app/lib/register.dart';
+import 'file:///D:/AndroidProjects/prestashop_app/lib/home_screen_1.dart';
 
 class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        resizeToAvoidBottomPadding: false,
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(20.0),
@@ -61,7 +64,12 @@ class LoginScreen extends StatelessWidget {
                   disabledColor: Colors.black,
                   height: 50.0,
                   minWidth: 120.0,
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (BuildContext context) => HomeScreen()));
+                  },
                   child: Text(
                     'Login',
                     style: TextStyle(
