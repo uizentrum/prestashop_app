@@ -114,7 +114,7 @@ class UserScreen extends StatelessWidget {
                     ),
                     constraints: BoxConstraints(
                       minWidth: 300, maxWidth: 400,
-                      minHeight: 100, maxHeight: 185,
+                      minHeight: 100, maxHeight: 165,
                     ),
                     padding: EdgeInsets.all(10),
                     decoration: BoxDecoration(
@@ -151,7 +151,7 @@ class UserScreen extends StatelessWidget {
                       ),
                       constraints: BoxConstraints(
                         minWidth: 300, maxWidth: 400,
-                        minHeight: 100, maxHeight: 185,
+                        minHeight: 100, maxHeight: 165,
                       ),
                       padding: EdgeInsets.all(10),
                       decoration: BoxDecoration(
@@ -188,7 +188,7 @@ class UserScreen extends StatelessWidget {
                       ),
                       constraints: BoxConstraints(
                         minWidth: 300, maxWidth: 400,
-                        minHeight: 100, maxHeight: 185,
+                        minHeight: 100, maxHeight: 165,
                       ),
                       padding: EdgeInsets.all(10),
                       decoration: BoxDecoration(
