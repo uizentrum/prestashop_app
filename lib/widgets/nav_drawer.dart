@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'file:///D:/AndroidProjects/prestashop_app/lib/home_screen_1.dart';
 import 'file:///D:/AndroidProjects/prestashop_app/lib/cart_screen.dart';
+import 'package:prestashop_app/settings_Screen.dart';
+import 'package:prestashop_app/user_screen.dart';
 
 class NavDrawer extends StatelessWidget {
   @override
@@ -27,11 +29,6 @@ class NavDrawer extends StatelessWidget {
             //color: Colors.black,
             size: 20.0,),
             title: Text('Home'),
-            onTap: () => {Navigator.of(context).pop()},
-          ),
-          ListTile(
-            leading: Icon(Icons.verified_user),
-            title: Text('Page 2'),
             onTap: () => {
               Navigator.push(
                 context,
@@ -40,20 +37,40 @@ class NavDrawer extends StatelessWidget {
             },
           ),
           ListTile(
+            leading: Icon(Icons.shopping_cart_rounded),
+            title: Text('Cart'),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => CartScreen()),
+              )
+            },
+          ),
+          ListTile(
+            leading: Icon(Icons.perm_identity_outlined),
+            title: Text('User Account'),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => UserScreen()),
+              )
+            },
+          ),
+          ListTile(
             leading: Icon(Icons.settings),
-            title: Text('Page 3'),
-            onTap: () => {Navigator.of(context).pop()},
+            title: Text('Settings'),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => SettingsScreen()),
+              )
+            },
           ),
-          ListTile(
-            leading: Icon(Icons.border_color),
-            title: Text('Page 4'),
-            onTap: () => {Navigator.of(context).pop()},
-          ),
-          ListTile(
+          /*ListTile(
             leading: Icon(Icons.exit_to_app),
             title: Text('Page 5'),
             onTap: () => {Navigator.of(context).pop()},
-          ),
+          ),*/
         ],
       ),
     );
