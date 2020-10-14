@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:prestashop_app/widgets/nav_drawer.dart';
+import 'package:webview_flutter/webview_flutter.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -21,406 +22,82 @@ class _BottomNavBarState extends State<BottomNavBar> {
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       drawer: NavDrawer(),
       appBar: AppBar(
         title: Text('Home'),
-        backgroundColor: Colors.blue.shade300,
+        backgroundColor: Colors.black45,
       ),
-      body: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.all(6.0),
-          child: Column(children: [
-            Row(children: [
-              Container(
-                color: Colors.grey,
-                child: Container(
-                  height: 100.0,
-                  child: Image.asset(
-                    'images/genericlogo2.png',
-                    fit: BoxFit.fitHeight,
-                  ),
-                ),
-              ),
-              SizedBox(
-                width: 10.0,
-              ),
-              Container(
-                //color: Colors.grey,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'Product title',
-                      textAlign: TextAlign.left,
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 16.0,
-                      ),
-                    ),
-                    Text(
-                      'SKU',
-                      textAlign: TextAlign.left,
-                      style: TextStyle(
-                        fontSize: 13.0,
-                      ),
-                    ),
-                    Text(
-                      'Status:',
-                      textAlign: TextAlign.left,
-                      style: TextStyle(
-                        fontSize: 13.0,
-                      ),
-                    ),
-                    Text(
-                      'Qty:',
-                      textAlign: TextAlign.left,
-                      style: TextStyle(
-                        fontSize: 13.0,
-                      ),
-                    ),
-                    Text(
-                      'Product ID:',
-                      textAlign: TextAlign.left,
-                      style: TextStyle(
-                        fontSize: 13.0,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              SizedBox(
-                width: 10.0,
-              ),
-              Container(
-                //color: Colors.grey,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  mainAxisSize: MainAxisSize.max,
-                  children: [
-                    Text(
-                      'Qty:',
-                      textAlign: TextAlign.left,
-                      style: TextStyle(
-                        fontSize: 13.0,
-                      ),
-                    ),
-                    Text(
-                      'Product ID:',
-                      textAlign: TextAlign.left,
-                      style: TextStyle(
-                        fontSize: 13.0,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ]),
-            //),
-            SizedBox(
-              height: 8.0,
-            ),
-            Row(children: [
-              Container(
-                color: Colors.grey,
-                child: Container(
-                  height: 100.0,
-                  child: Image.asset(
-                    'images/genericlogo2.png',
-                    fit: BoxFit.fitHeight,
-                  ),
-                ),
-              ),
-              SizedBox(
-                width: 10.0,
-              ),
-              Container(
-                //color: Colors.grey,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'Product title',
-                      textAlign: TextAlign.left,
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 16.0,
-                      ),
-                    ),
-                    Text(
-                      'SKU',
-                      textAlign: TextAlign.left,
-                      style: TextStyle(
-                        fontSize: 13.0,
-                      ),
-                    ),
-                    Text(
-                      'Status:',
-                      textAlign: TextAlign.left,
-                      style: TextStyle(
-                        fontSize: 13.0,
-                      ),
-                    ),
-                    Text(
-                      'Qty:',
-                      textAlign: TextAlign.left,
-                      style: TextStyle(
-                        fontSize: 13.0,
-                      ),
-                    ),
-                    Text(
-                      'Product ID:',
-                      textAlign: TextAlign.left,
-                      style: TextStyle(
-                        fontSize: 13.0,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              SizedBox(
-                width: 10.0,
-              ),
-              Container(
-                //color: Colors.grey,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  mainAxisSize: MainAxisSize.max,
-                  children: [
-                    Text(
-                      'Qty:',
-                      textAlign: TextAlign.left,
-                      style: TextStyle(
-                        fontSize: 13.0,
-                      ),
-                    ),
-                    Text(
-                      'Product ID:',
-                      textAlign: TextAlign.left,
-                      style: TextStyle(
-                        fontSize: 13.0,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ]),
-            SizedBox(
-              height: 8.0,
-            ),
-            Row(children: [
-              Container(
-                color: Colors.grey,
-                child: Container(
-                  height: 100.0,
-                  child: Image.asset(
-                    'images/genericlogo2.png',
-                    fit: BoxFit.fitHeight,
-                  ),
-                ),
-              ),
-              SizedBox(
-                width: 10.0,
-              ),
-              Container(
-                //color: Colors.grey,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'Product title',
-                      textAlign: TextAlign.left,
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 16.0,
-                      ),
-                    ),
-                    Text(
-                      'SKU',
-                      textAlign: TextAlign.left,
-                      style: TextStyle(
-                        fontSize: 13.0,
-                      ),
-                    ),
-                    Text(
-                      'Status:',
-                      textAlign: TextAlign.left,
-                      style: TextStyle(
-                        fontSize: 13.0,
-                      ),
-                    ),
-                    Text(
-                      'Qty:',
-                      textAlign: TextAlign.left,
-                      style: TextStyle(
-                        fontSize: 13.0,
-                      ),
-                    ),
-                    Text(
-                      'Product ID:',
-                      textAlign: TextAlign.left,
-                      style: TextStyle(
-                        fontSize: 13.0,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              SizedBox(
-                width: 10.0,
-              ),
-              Container(
-                //color: Colors.grey,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  mainAxisSize: MainAxisSize.max,
-                  children: [
-                    Text(
-                      'Qty:',
-                      textAlign: TextAlign.left,
-                      style: TextStyle(
-                        fontSize: 13.0,
-                      ),
-                    ),
-                    Text(
-                      'Product ID:',
-                      textAlign: TextAlign.left,
-                      style: TextStyle(
-                        fontSize: 13.0,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ]),
-            SizedBox(
-              height: 8.0,
-            ),
-            Row(children: [
-              Container(
-                color: Colors.grey,
-                child: Container(
-                  height: 100.0,
-                  child: Image.asset(
-                    'images/genericlogo2.png',
-                    fit: BoxFit.fitHeight,
-                  ),
-                ),
-              ),
-              SizedBox(
-                width: 10.0,
-              ),
-              Container(
-                //color: Colors.grey,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'Product title',
-                      textAlign: TextAlign.left,
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 16.0,
-                      ),
-                    ),
-                    Text(
-                      'SKU',
-                      textAlign: TextAlign.left,
-                      style: TextStyle(
-                        fontSize: 13.0,
-                      ),
-                    ),
-                    Text(
-                      'Status:',
-                      textAlign: TextAlign.left,
-                      style: TextStyle(
-                        fontSize: 13.0,
-                      ),
-                    ),
-                    Text(
-                      'Qty:',
-                      textAlign: TextAlign.left,
-                      style: TextStyle(
-                        fontSize: 13.0,
-                      ),
-                    ),
-                    Text(
-                      'Product ID:',
-                      textAlign: TextAlign.left,
-                      style: TextStyle(
-                        fontSize: 13.0,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              SizedBox(
-                width: 10.0,
-              ),
-              Container(
-                //color: Colors.grey,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  mainAxisSize: MainAxisSize.max,
-                  children: [
-                    Text(
-                      'Qty:',
-                      textAlign: TextAlign.left,
-                      style: TextStyle(
-                        fontSize: 13.0,
-                      ),
-                    ),
-                    Text(
-                      'Product ID:',
-                      textAlign: TextAlign.left,
-                      style: TextStyle(
-                        fontSize: 13.0,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ]),
-            SizedBox(
-              height: 8.0,
-            ),
-          ]),
-        ),
+      body: Scaffold(
+        body: WebViewContainer('http://pres.india1-bernau.de/index.php', ''),
       ),
 
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentIndex,
+        onTap: (index){
+          _currentIndex = index;
+        },
+
+        backgroundColor: Colors.black54,
+        //type: BottomNavigationBarType.fixed,
+
         items: [
           BottomNavigationBarItem(
             title: Text('Home'),
             icon: Icon(Icons.home),
-            backgroundColor: Colors.blue,
+            backgroundColor: Colors.black54,
           ),
           BottomNavigationBarItem(
             title: Text('Cart'),
             icon: Icon(Icons.shopping_cart_rounded),
-            backgroundColor: Colors.blue,
+            backgroundColor: Colors.black54,
           ),
           BottomNavigationBarItem(
             title: Text('Favourite products'),
             icon: Icon(Icons.star),
-            backgroundColor: Colors.blue,
+            backgroundColor: Colors.black54,
           ),
           BottomNavigationBarItem(
             title: Text('User Account'),
             icon: Icon(Icons.person),
-            backgroundColor: Colors.blue,
+            backgroundColor: Colors.black54,
           ),
         ],
-        onTap: (index) {
-          setState(() {
-            _currentIndex = index;
-          });
-        },
+      ),
+    );
+  }
+}
+
+class WebViewContainer extends StatefulWidget {
+  final url;
+  final title;
+  WebViewContainer(this.url, this.title);
+  @override
+  createState() => _WebViewContainerState(this.url, this.title);
+}
+
+class _WebViewContainerState extends State<WebViewContainer> {
+  var _url;
+  var _title;
+  final _key = UniqueKey();
+  _WebViewContainerState(this._url, this._title);
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      //appBar: AppBar(
+        //title: Text(_title),
+      //),
+      body: Column(
+        children: [
+          Expanded(
+            child: WebView(
+              key: _key,
+              javascriptMode: JavascriptMode.unrestricted,
+              initialUrl: _url,
+            ),
+          ),
+        ],
       ),
     );
   }

@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'file:///D:/AndroidProjects/prestashop_app/lib/home_screen_1.dart';
@@ -25,10 +26,14 @@ class NavDrawer extends StatelessWidget {
             ),
           ),
           ListTile(
+            tileColor: Colors.black54,
             leading: Icon(Icons.home,
-            //color: Colors.black,
+            color: Colors.white,
             size: 20.0,),
-            title: Text('Home'),
+            title: Text('Home',
+            style: TextStyle(
+              color: Colors.white,
+            ),),
             onTap: () => {
               Navigator.push(
                 context,
@@ -37,8 +42,15 @@ class NavDrawer extends StatelessWidget {
             },
           ),
           ListTile(
-            leading: Icon(Icons.shopping_cart_rounded),
-            title: Text('Cart'),
+            tileColor: Colors.black54,
+            leading: Icon(Icons.shopping_cart_rounded,
+              color: Colors.white,
+            ),
+            title: Text('Cart',
+              style: TextStyle(
+                color: Colors.white,
+              ),
+            ),
             onTap: () => {
               Navigator.push(
                 context,
@@ -47,8 +59,14 @@ class NavDrawer extends StatelessWidget {
             },
           ),
           ListTile(
-            leading: Icon(Icons.perm_identity_outlined),
-            title: Text('User Account'),
+            tileColor: Colors.black54,
+            leading: Icon(Icons.perm_identity_outlined,
+            color: Colors.white,
+            ),
+            title: Text('User Account',
+              style: TextStyle(
+                color: Colors.white,
+              ),),
             onTap: () => {
               Navigator.push(
                 context,
@@ -57,8 +75,13 @@ class NavDrawer extends StatelessWidget {
             },
           ),
           ListTile(
-            leading: Icon(Icons.settings),
-            title: Text('Settings'),
+            tileColor: Colors.black54,
+            leading: Icon(Icons.settings,
+            color: Colors.white,),
+            title: Text('Settings',
+              style: TextStyle(
+                color: Colors.white,
+              ),),
             onTap: () => {
               Navigator.push(
                 context,
@@ -66,6 +89,7 @@ class NavDrawer extends StatelessWidget {
               )
             },
           ),
+
           /*ListTile(
             leading: Icon(Icons.exit_to_app),
             title: Text('Page 5'),
