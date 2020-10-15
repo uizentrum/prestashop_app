@@ -14,7 +14,7 @@ class ThirdScreen extends StatelessWidget {
               Row(
                 children: [
                   SizedBox(
-                    width: 3.0,
+                    width: 3,
                   ),
                   Container(
                     child: CircleAvatar(
