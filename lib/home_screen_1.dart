@@ -1,13 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:prestashop_app/cart_screen.dart';
 import 'package:prestashop_app/first_screen.dart';
 import 'package:prestashop_app/second_screen.dart';
 import 'package:prestashop_app/settings_Screen.dart';
 import 'package:prestashop_app/third_screen.dart';
-import 'package:prestashop_app/user_screen.dart';
-import 'package:prestashop_app/widgets/nav_drawer.dart';
-import 'package:prestashop_app/widgets/nav_drawer_right.dart';
-import 'package:webview_flutter/webview_flutter.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -70,7 +65,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
       ),
       drawer: Drawer(
         child: Container(
-          color: Colors.black54,
+          color: Colors.white,
           child: ListView(
             padding: EdgeInsets.zero,
             children: [
@@ -78,18 +73,18 @@ class _BottomNavBarState extends State<BottomNavBar> {
                   child: Text(
                     'App',
                     style: TextStyle(
-                      color: Colors.white,
+                      color: Colors.blue.shade300,
                       fontSize: 23.0,
                     ),
                   ),
               ),
               ListTile(
                 leading: Icon(Icons.settings_sharp,
-                  color: Colors.white,
+                  color: Colors.blue.shade300,
                   size: 20.0,),
                 title: Text('Settings',
                   style: TextStyle(
-                    color: Colors.white,
+                    color: Colors.blue.shade300,
                   ),
                 ),
                 onTap: () => {
@@ -105,7 +100,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
       ),
       endDrawer: Drawer(
         child: Container(
-          color: Colors.black54,
+          color: Colors.white,
           child: ListView(
             padding: EdgeInsets.zero,
             children: [
@@ -113,18 +108,18 @@ class _BottomNavBarState extends State<BottomNavBar> {
                 child: Text(
                   '',
                   style: TextStyle(
-                    color: Colors.white,
+                    color: Colors.blue.shade300,
                     fontSize: 23.0,
                   ),
                 ),
               ),
               ListTile(
                 leading: Icon(Icons.category,
-                  color: Colors.white,
+                  color: Colors.blue.shade300,
                   size: 20.0,),
                 title: Text('Categories',
                 style: TextStyle(
-                  color: Colors.white,
+                  color: Colors.blue.shade300,
                   ),
                 ),
                 onTap: () => {

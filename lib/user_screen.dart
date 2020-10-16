@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:prestashop_app/login.dart';
-import 'package:prestashop_app/widgets/nav_drawer.dart';
+//import 'package:prestashop_app/widgets/nav_drawer.dart';
 
 class UserScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        drawer: NavDrawer(),
+        //drawer: NavDrawer(),
       appBar: AppBar(
         title: Text('User Account'),
         backgroundColor: Colors.blue.shade300,
