@@ -8,8 +8,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BottomNavBar(
-        // BottomNavBar(),
-        );
+    );
   }
 }
 
@@ -34,7 +33,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
       //drawer: NavDrawer(),
       //endDrawer: NavDrawerRight(),
       appBar: AppBar(
-        title: Text('Home'),
+        title: Text('App'),
         leading: Builder(
           builder: (context) {
             return IconButton(
@@ -46,7 +45,6 @@ class _BottomNavBarState extends State<BottomNavBar> {
           },
         ),
         actions: [
-          //
           Builder(
             builder: (context) {
               return IconButton(
@@ -57,6 +55,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
               );
             },
           ),
+
         ],
         /*leading: Image.network('http://pres.india1-bernau.de/img/logo.jpg',
         width: 80.0,
@@ -70,13 +69,18 @@ class _BottomNavBarState extends State<BottomNavBar> {
             padding: EdgeInsets.zero,
             children: [
               DrawerHeader(
-                  child: Text(
-                    'App',
-                    style: TextStyle(
-                      color: Colors.blue.shade300,
-                      fontSize: 23.0,
-                    ),
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                ),
+                child: Text(
+                  'App',
+                  textAlign: TextAlign.center,
+                  //textScaleFactor: 0.9,
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 23.0,
                   ),
+                ),
               ),
               ListTile(
                 leading: Icon(Icons.settings_sharp,
@@ -143,32 +147,32 @@ class _BottomNavBarState extends State<BottomNavBar> {
         items: [
           BottomNavigationBarItem(
               icon: Icon(
-                Icons.home,
+                Icons.home_outlined,
                 color: Colors.blue,
               ),
             title: Text('Home'),
             activeIcon: Icon(Icons.home,
-            color: Colors.lightBlueAccent,
+            color: Colors.blue,
             ),
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.shopping_cart,
+              Icons.shopping_cart_outlined,
               color: Colors.blue,
             ),
             title: Text('Shopping cart'),
             activeIcon: Icon(Icons.shopping_cart,
-              color: Colors.lightBlueAccent,
+              color: Colors.blue,
             ),
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.people,
+              Icons.people_alt_outlined,
               color: Colors.blue,
             ),
             title: Text('User account'),
-            activeIcon: Icon(Icons.people,
-              color: Colors.lightBlueAccent,
+            activeIcon: Icon(Icons.people_alt,
+              color: Colors.blue,
             ),
           ),
         ],
@@ -179,7 +183,6 @@ class _BottomNavBarState extends State<BottomNavBar> {
         },
       ),
       body: _widgetOptions.elementAt(_selectedIndex),
-      //bottomnavbar
     );
   }
 }

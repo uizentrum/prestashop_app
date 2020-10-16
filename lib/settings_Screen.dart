@@ -25,7 +25,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   elevation: 8.0,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10.0)),
-                  color: Colors.blue,
+                  color: Colors.blue.shade300,
                   child: ListTile(
                     //onTap: () {},
                     title: Text(
@@ -141,7 +141,11 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   ),
                 ),
                 SizedBox(height: 14.0),
-                Center(child: Text('©2020 All rights reserved.'),
+                Center(child: Text('©2020 All rights reserved.',
+                style: TextStyle(
+                  color: Colors.grey,
+                    ) ,
+                  ),
                 ),
               ],
             ),
