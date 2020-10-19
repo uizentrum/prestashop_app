@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:prestashop_app/fifth_screen.dart';
 import 'package:prestashop_app/first_screen.dart';
+import 'package:prestashop_app/fourth_screen.dart';
 import 'package:prestashop_app/second_screen.dart';
 import 'package:prestashop_app/settings_Screen.dart';
 import 'package:prestashop_app/third_screen.dart';
@@ -25,6 +27,8 @@ class _BottomNavBarState extends State<BottomNavBar> {
     FirstScreen(),
     SecondScreen(),
     ThirdScreen(),
+    FourthScreen(),
+    FifthScreen(),
   ];
 
   @override
@@ -172,6 +176,26 @@ class _BottomNavBarState extends State<BottomNavBar> {
             ),
             title: Text('User account'),
             activeIcon: Icon(Icons.people_alt,
+              color: Colors.blue,
+            ),
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.search,
+              color: Colors.blue,
+            ),
+            title: Text('Search'),
+            activeIcon: Icon(Icons.saved_search,
+              color: Colors.blue,
+            ),
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.favorite_border,
+              color: Colors.blue,
+            ),
+            title: Text('Favorite'),
+            activeIcon: Icon(Icons.favorite,
               color: Colors.blue,
             ),
           ),
