@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:prestashop_app/login.dart';
 import 'splashscreen.dart';
 
 void main() {
@@ -10,7 +11,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SplashScreen(),
+      //home: SplashScreen(),
+      home: LoginScreen(),
     );
   }
 }
