@@ -61,9 +61,6 @@ class _BottomNavBarState extends State<BottomNavBar> {
           ),
 
         ],
-        /*leading: Image.network('http://pres.india1-bernau.de/img/logo.jpg',
-        width: 80.0,
-        height: 40.0,),*/
         backgroundColor: Colors.blue,
       ),
       drawer: Drawer(
@@ -141,9 +138,6 @@ class _BottomNavBarState extends State<BottomNavBar> {
           ),
         ),
       ),
-      /*body: Scaffold(
-          //body: /*WebViewContainer('http://pres.india1-bernau.de/index.php', ''),*/
-          ),*/
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _selectedIndex,
         showSelectedLabels: false,
@@ -210,70 +204,3 @@ class _BottomNavBarState extends State<BottomNavBar> {
     );
   }
 }
-
-/*class WebViewContainer extends StatefulWidget {
-  final url;
-  final title;
-  WebViewContainer(this.url, this.title);
-  @override
-  createState() => _WebViewContainerState(this.url, this.title);
-}*/
-
-/*class _WebViewContainerState extends State<WebViewContainer> {
-  var _url;
-  var _title;
-  final _key = UniqueKey();
-  _WebViewContainerState(this._url, this._title);
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      //appBar: AppBar(
-        //title: Text(_title),
-      //),
-      body: Column(
-        children: [
-          Expanded(
-            child: WebView(
-              key: _key,
-              javascriptMode: JavascriptMode.unrestricted,
-              initialUrl: _url,
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}*/
-
-/*
-* bottomNavigationBar: BottomNavigationBar(
-        currentIndex: _currentIndex,
-        items: [
-          BottomNavigationBarItem(
-            title: Text('Home'),
-            icon: Icon(Icons.home),
-            backgroundColor: Colors.blue,
-          ),
-          BottomNavigationBarItem(
-            title: Text('Cart'),
-            icon: Icon(Icons.shopping_cart_rounded),
-            backgroundColor: Colors.blue,
-          ),
-          BottomNavigationBarItem(
-            title: Text('Favourite products'),
-            icon: Icon(Icons.star),
-            backgroundColor: Colors.blue,
-          ),
-          BottomNavigationBarItem(
-            title: Text('User Account'),
-            icon: Icon(Icons.person),
-            backgroundColor: Colors.blue,
-          ),
-        ],
-        onTap: (index) {
-          setState(() {
-            _currentIndex = index;
-          });
-        },
-
-      ),*/
