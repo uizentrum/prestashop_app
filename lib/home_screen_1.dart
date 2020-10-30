@@ -22,6 +22,7 @@ class BottomNavBar extends StatefulWidget {
 class _BottomNavBarState extends State<BottomNavBar> {
   //int _currentIndex = 0;
   int _selectedIndex = 0;
+  String color ='black';
 
   List<Widget> _widgetOptions = <Widget>[
     FirstScreen(),
