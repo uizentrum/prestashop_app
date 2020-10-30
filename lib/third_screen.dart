@@ -85,7 +85,7 @@ class ThirdScreen extends StatelessWidget {
               ),
               Card(
                   child: InkWell(
-                    splashColor: Colors.white,
+                    splashColor: Colors.yellow,
                     onTap: (){},
                     child: Container(
                       child: Container(
@@ -136,11 +136,15 @@ class ThirdScreen extends StatelessWidget {
                                   style: TextStyle(
                                     fontSize: 20.0,
                                     fontWeight: FontWeight.bold,
+                                    color: Colors.white
                                   ),
                                 ),
                               ],
                             ),
-                            Text('Delivery address will be displayed here'),
+                            Text('Delivery address will be displayed here',
+                            style: TextStyle(
+                              color: Colors.white
+                            ),),
                           ],
                         ),
                       ),
@@ -150,7 +154,7 @@ class ThirdScreen extends StatelessWidget {
                       ),
                       padding: EdgeInsets.all(10),
                       decoration: BoxDecoration(
-                        color: Colors.black26,
+                        color: Colors.black45,
                         borderRadius: BorderRadius.circular(3.0),
                       ),
                     ),
@@ -173,11 +177,15 @@ class ThirdScreen extends StatelessWidget {
                                   style: TextStyle(
                                     fontSize: 20.0,
                                     fontWeight: FontWeight.bold,
+                                    color: Colors.white
                                   ),
                                 ),
                               ],
                             ),
-                            Text('Payment methods will be displayed here'),
+                            Text('Payment methods will be displayed here',
+                            style: TextStyle(
+                              color: Colors.white
+                            ),),
                           ],
                         ),
                       ),
@@ -187,7 +195,7 @@ class ThirdScreen extends StatelessWidget {
                       ),
                       padding: EdgeInsets.all(10),
                       decoration: BoxDecoration(
-                        color: Colors.black38,
+                        color: Colors.grey.shade900,
                         borderRadius: BorderRadius.circular(3.0),
                       ),
                     ),
