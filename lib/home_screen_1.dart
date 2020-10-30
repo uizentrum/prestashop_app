@@ -61,7 +61,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
           ),
 
         ],
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.black87,
       ),
       drawer: Drawer(
         child: Container(
@@ -71,7 +71,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
             children: [
               DrawerHeader(
                 decoration: BoxDecoration(
-                  color: Colors.blue,
+                  color: Colors.grey,
                 ),
                 child: Text(
                   'App',
@@ -85,11 +85,11 @@ class _BottomNavBarState extends State<BottomNavBar> {
               ),
               ListTile(
                 leading: Icon(Icons.settings_sharp,
-                  color: Colors.blue.shade300,
+                  color: Colors.black87,
                   size: 20.0,),
                 title: Text('Settings',
                   style: TextStyle(
-                    color: Colors.blue.shade300,
+                    color: Colors.black87,
                   ),
                 ),
                 onTap: () => {
@@ -113,18 +113,18 @@ class _BottomNavBarState extends State<BottomNavBar> {
                 child: Text(
                   '',
                   style: TextStyle(
-                    color: Colors.blue.shade300,
+                    color: Colors.grey,
                     fontSize: 23.0,
                   ),
                 ),
               ),
               ListTile(
                 leading: Icon(Icons.category,
-                  color: Colors.blue.shade300,
+                  color: Colors.grey,
                   size: 20.0,),
                 title: Text('Categories',
                 style: TextStyle(
-                  color: Colors.blue.shade300,
+                  color: Colors.grey.shade700,
                   ),
                 ),
                 onTap: () => {
@@ -146,51 +146,51 @@ class _BottomNavBarState extends State<BottomNavBar> {
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.home_outlined,
-                color: Colors.blue,
+                color: Colors.grey,
               ),
             title: Text('Home'),
             activeIcon: Icon(Icons.home,
-            color: Colors.blue,
+            color: Colors.black,
             ),
           ),
           BottomNavigationBarItem(
             icon: Icon(
               Icons.shopping_cart_outlined,
-              color: Colors.blue,
+              color: Colors.grey,
             ),
             title: Text('Shopping cart'),
             activeIcon: Icon(Icons.shopping_cart,
-              color: Colors.blue,
+              color: Colors.black,
             ),
           ),
           BottomNavigationBarItem(
             icon: Icon(
               Icons.people_alt_outlined,
-              color: Colors.blue,
+              color: Colors.grey,
             ),
             title: Text('User account'),
             activeIcon: Icon(Icons.people_alt,
-              color: Colors.blue,
+              color: Colors.black,
             ),
           ),
           BottomNavigationBarItem(
             icon: Icon(
               Icons.search,
-              color: Colors.blue,
+              color: Colors.grey,
             ),
             title: Text('Search'),
             activeIcon: Icon(Icons.saved_search,
-              color: Colors.blue,
+              color: Colors.black,
             ),
           ),
           BottomNavigationBarItem(
             icon: Icon(
               Icons.favorite_border,
-              color: Colors.blue,
+              color: Colors.grey,
             ),
             title: Text('Favorite'),
             activeIcon: Icon(Icons.favorite,
-              color: Colors.blue,
+              color: Colors.black,
             ),
           ),
         ],

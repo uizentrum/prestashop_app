@@ -25,7 +25,7 @@ class FifthScreen extends StatelessWidget {
                   ),
                   Card(
                       child: InkWell(
-                        splashColor: Colors.blue.shade300,
+                        splashColor: Colors.grey,
                         onTap: (){},
                         child: Container(
                           child: Container(
@@ -38,7 +38,7 @@ class FifthScreen extends StatelessWidget {
                                         radius: 35.0,
                                         backgroundColor: Colors.white,
                                         child: Icon(Icons.shopping_cart_outlined,
-                                          color: Colors.blue.shade300,
+                                          color: Colors.black,
                                           size: 40.0,
                                         ),
                                       ),
@@ -85,7 +85,7 @@ class FifthScreen extends StatelessWidget {
                                         radius: 35.0,
                                         backgroundColor: Colors.white,
                                         child: Icon(Icons.shopping_bag_outlined,
-                                          color: Colors.blue.shade300,
+                                          color: Colors.black,
                                           size: 40.0,
                                         ),
                                       ),
@@ -132,7 +132,7 @@ class FifthScreen extends StatelessWidget {
                                         radius: 35.0,
                                         backgroundColor: Colors.white,
                                         child: Icon(Icons.time_to_leave_outlined,
-                                          color: Colors.blue.shade300,
+                                          color: Colors.black,
                                           size: 40.0,
                                         ),
                                       ),
@@ -179,7 +179,7 @@ class FifthScreen extends StatelessWidget {
                                         radius: 35.0,
                                         backgroundColor: Colors.white,
                                         child: Icon(Icons.shopping_basket_outlined,
-                                          color: Colors.blue.shade300,
+                                          color: Colors.black,
                                           size: 40.0,
                                         ),
                                       ),
@@ -225,7 +225,7 @@ class FifthScreen extends StatelessWidget {
                           ),
                           padding: EdgeInsets.all(8.0),
                           decoration: BoxDecoration(
-                            color: Colors.blue.shade50,
+                            color: Colors.grey.shade200,
                             borderRadius: BorderRadius.circular(3.0),
                           ),
                         ),

@@ -9,11 +9,11 @@ class FourthScreen extends StatelessWidget {
         backgroundColor: Colors.white,
         title: Text('Search',
         style: TextStyle(
-          color: Colors.blue
+          color: Colors.black38
         ),),
         actions: [
           IconButton(icon: Icon(Icons.search,
-          color: Colors.blue,), onPressed: (){}),
+          color: Colors.black54,), onPressed: (){}),
         ],
       ),
     );

@@ -10,7 +10,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.black,
         title: Text('Settings'),
       ),
       body: Stack(
@@ -25,7 +25,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   elevation: 8.0,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10.000)),
-                  color: Colors.blue.shade300,
+                  color: Colors.black54,
                   child: ListTile(
                     //onTap: () {},
                     title: Text(
@@ -86,21 +86,21 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 ),
                 SizedBox( height: 8.0),
                 SwitchListTile(
-                  activeColor: Colors.blue,
+                  activeColor: Colors.red,
                     contentPadding: EdgeInsets.all(0),
                     title: Text('Options sample'),
                     value: false,
                     onChanged: (smt){},
                 ),
                 SwitchListTile(
-                  activeColor: Colors.blue,
+                  activeColor: Colors.red,
                   contentPadding: EdgeInsets.all(0),
                   title: Text('Options sample 2'),
                   value: true,
                   onChanged: (smt){},
                 ),
                 SwitchListTile(
-                  activeColor: Colors.blue,
+                  activeColor: Colors.red,
                   contentPadding: EdgeInsets.all(0),
                   title: Text('Options sample 2'),
                   value: true,

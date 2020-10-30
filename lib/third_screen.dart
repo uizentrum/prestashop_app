@@ -19,7 +19,7 @@ class ThirdScreen extends StatelessWidget {
                   Container(
                     child: CircleAvatar(
                       radius: 40.0,
-                      backgroundColor: Colors.blue.shade300,
+                      backgroundColor: Colors.black,
                       child: Icon(Icons.person,
                         color: Colors.white,
                         size: 40.0,),
@@ -85,7 +85,7 @@ class ThirdScreen extends StatelessWidget {
               ),
               Card(
                   child: InkWell(
-                    splashColor: Colors.blue.shade300,
+                    splashColor: Colors.white,
                     onTap: (){},
                     child: Container(
                       child: Container(
@@ -113,7 +113,7 @@ class ThirdScreen extends StatelessWidget {
                       ),
                       padding: EdgeInsets.all(10),
                       decoration: BoxDecoration(
-                        color: Colors.blue.shade50,
+                        color: Colors.black12,
                         borderRadius: BorderRadius.circular(3.0),
                       ),
                     ),
@@ -122,7 +122,7 @@ class ThirdScreen extends StatelessWidget {
               SizedBox(height: 5.0),
               Card(
                   child: InkWell(
-                    splashColor: Colors.blue.shade300,
+                    splashColor: Colors.green,
                     onTap: (){},
                     child: Container(
                       child: Container(
@@ -150,7 +150,7 @@ class ThirdScreen extends StatelessWidget {
                       ),
                       padding: EdgeInsets.all(10),
                       decoration: BoxDecoration(
-                        color: Colors.blue.shade100,
+                        color: Colors.black26,
                         borderRadius: BorderRadius.circular(3.0),
                       ),
                     ),
@@ -159,7 +159,7 @@ class ThirdScreen extends StatelessWidget {
               SizedBox(height: 5.0),
               Card(
                   child: InkWell(
-                    splashColor: Colors.blue.shade300,
+                    splashColor: Colors.red,
                     onTap: (){},
                     child: Container(
                       child: Container(
@@ -187,7 +187,7 @@ class ThirdScreen extends StatelessWidget {
                       ),
                       padding: EdgeInsets.all(10),
                       decoration: BoxDecoration(
-                        color: Colors.blue.shade200,
+                        color: Colors.black38,
                         borderRadius: BorderRadius.circular(3.0),
                       ),
                     ),
