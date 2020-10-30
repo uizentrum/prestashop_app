@@ -150,8 +150,9 @@ class _BottomNavBarState extends State<BottomNavBar> {
               ),
             title: Text('Home'),
             activeIcon: Icon(Icons.home,
-            color: Colors.black,
+            color: Colors.white,
             ),
+              backgroundColor: Colors.black
           ),
           BottomNavigationBarItem(
             icon: Icon(
@@ -162,6 +163,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
             activeIcon: Icon(Icons.shopping_cart,
               color: Colors.black,
             ),
+              backgroundColor: Colors.white
           ),
           BottomNavigationBarItem(
             icon: Icon(
@@ -170,8 +172,9 @@ class _BottomNavBarState extends State<BottomNavBar> {
             ),
             title: Text('User account'),
             activeIcon: Icon(Icons.people_alt,
-              color: Colors.black,
+              color: Colors.white,
             ),
+              backgroundColor: Colors.black
           ),
           BottomNavigationBarItem(
             icon: Icon(
@@ -182,6 +185,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
             activeIcon: Icon(Icons.saved_search,
               color: Colors.black,
             ),
+              backgroundColor: Colors.white
           ),
           BottomNavigationBarItem(
             icon: Icon(
@@ -190,8 +194,9 @@ class _BottomNavBarState extends State<BottomNavBar> {
             ),
             title: Text('Favorite'),
             activeIcon: Icon(Icons.favorite,
-              color: Colors.black,
+              color: Colors.white,
             ),
+            backgroundColor: Colors.black
           ),
         ],
         onTap: (index) {
@@ -199,6 +204,8 @@ class _BottomNavBarState extends State<BottomNavBar> {
             _selectedIndex = index;
           });
         },
+        //backgroundColor: Colors.black,
+
       ),
       body: _widgetOptions.elementAt(_selectedIndex),
     );
