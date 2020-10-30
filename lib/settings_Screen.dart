@@ -24,7 +24,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 Card(
                   elevation: 8.0,
                   shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10.0)),
+                      borderRadius: BorderRadius.circular(10.000)),
                   color: Colors.blue.shade300,
                   child: ListTile(
                     //onTap: () {},

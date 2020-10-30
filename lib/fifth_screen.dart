@@ -220,10 +220,10 @@ class FifthScreen extends StatelessWidget {
                             ),
                           ),
                           constraints: BoxConstraints(
-                            minWidth: 300, maxWidth: 400,
+                            minWidth: 300, maxWidth: 399  ,
                             minHeight: 60, maxHeight: 600,
                           ),
-                          padding: EdgeInsets.all(10),
+                          padding: EdgeInsets.all(8.0),
                           decoration: BoxDecoration(
                             color: Colors.blue.shade50,
                             borderRadius: BorderRadius.circular(3.0),
@@ -233,8 +233,8 @@ class FifthScreen extends StatelessWidget {
                   ),
                 ],
               ),
-            ),
-      ]
+          ),
+        ]
       ),
     );
   }
